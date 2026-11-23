@@ -1,0 +1,242 @@
+/* International Corporate Styling for Ray Chowdhury Foundation (RCF) */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-navy: #081a36;
+  --primary: #0a4f9d;
+  --primary-light: #1e70d4;
+  --primary-dark: #063468;
+  --secondary: #059669;
+  --secondary-dark: #047857;
+  --accent-gold: #f59e0b;
+  --accent-amber: #d97706;
+  --slate-dark: #0f172a;
+  --slate-body: #334155;
+  --slate-light: #f8fafc;
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+  scroll-behavior: smooth;
+  color: #1e293b;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography styles */
+.font-bangla {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Corporate Glassmorphism */
+.corporate-glass {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.corporate-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.corporate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(10, 79, 157, 0.12);
+  border-color: rgba(10, 79, 157, 0.3);
+}
+
+/* Subtle corporate mesh background */
+.hero-corporate-bg {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(at 100% 0%, rgba(10, 79, 157, 0.08) 0px, transparent 55%),
+    radial-gradient(at 0% 100%, rgba(5, 150, 105, 0.06) 0px, transparent 55%),
+    radial-gradient(at 50% 50%, rgba(245, 158, 11, 0.04) 0px, transparent 55%);
+}
+
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+}
+
+/* Button & Micro-interactions */
+.btn-primary-corporate {
+  background: linear-gradient(135deg, #0a4f9d 0%, #083c77 100%);
+  color: #ffffff;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-corporate:hover {
+  background: linear-gradient(135deg, #0e5baf 0%, #0a4f9d 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -5px rgba(10, 79, 157, 0.35);
+}
+
+/* International Credit Card Preview Widget */
+.credit-card-preview {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0a4f9d 100%);
+  border-radius: 16px;
+  padding: 22px;
+  color: #ffffff;
+  box-shadow: 0 15px 30px -8px rgba(15, 23, 42, 0.35);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.credit-card-preview::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -30%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card-chip {
+  width: 44px;
+  height: 32px;
+  background: linear-gradient(135deg, #fcd34d 0%, #d97706 100%);
+  border-radius: 6px;
+  position: relative;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.card-chip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Payment Gateway Tab styling */
+.gateway-tab-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gateway-tab-btn.active {
+  background-color: #ffffff;
+  color: #0a4f9d;
+  box-shadow: 0 4px 12px -2px rgba(10, 79, 157, 0.15);
+  border-color: #0a4f9d;
+  font-weight: 800;
+}
+
+/* Express Wallet Buttons */
+.btn-apple-pay {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+.btn-apple-pay:hover {
+  background-color: #1f2937;
+  transform: translateY(-1px);
+}
+
+.btn-google-pay {
+  background-color: #ffffff;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+  transition: all 0.2s ease;
+}
+.btn-google-pay:hover {
+  background-color: #f8fafc;
+  border-color: #bdc1c6;
+  transform: translateY(-1px);
+}
+
+.btn-paypal {
+  background-color: #ffc439;
+  color: #003087;
+  transition: all 0.2s ease;
+}
+.btn-paypal:hover {
+  background-color: #f4b41a;
+  transform: translateY(-1px);
+}
+
+/* Sleek Badge Pulse */
+@keyframes subtlePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+.pulse-badge {
+  animation: subtlePulse 3s infinite ease-in-out;
+}
+
+/* Mobile Menu Offscreen Containment */
+#mobileMenu.translate-x-full {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* FAQ transition */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.faq-answer.open {
+  max-height: 400px;
+  opacity: 1;
+}
+
+/* Print Styles for Official Digital Receipt */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #receiptModal, #receiptContent, #receiptContent * {
+    visibility: visible;
+  }
+  #receiptModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+  .receipt-no-print {
+    display: none !important;
+  }
+}

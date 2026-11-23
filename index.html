@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Chowdhury Foundation (RCF) | Global Philanthropy for Grassroots Impact</title>
+
+    <!-- Meta Description & SEO -->
+    <meta name="description"
+        content="Ray Chowdhury Foundation (RCF) is a registered non-profit organization (Govt Reg: S-14245/2025) bridging global diaspora philanthropy in Toronto, Canada with transparent, direct grassroots impact in Fulchari, Gaibandha, Bangladesh.">
+    <meta name="keywords"
+        content="Ray Chowdhury Foundation, RCF, Bangladesh charity Toronto, Canadian diaspora charity, Zakat Canada, Fulchari Gaibandha NGO, river erosion relief">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#0a4f9d',
+                            navy: '#081a36',
+                            light: '#1e70d4',
+                            dark: '#063468'
+                        },
+                        secondary: {
+                            DEFAULT: '#059669',
+                            dark: '#047857',
+                            light: '#10b981'
+                        },
+                        accent: {
+                            gold: '#f59e0b',
+                            amber: '#d97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        bangla: ['"Hind Siliguri"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- 1. Global Notification & Credentials Header -->
+    <div class="bg-primary-navy text-white text-xs border-b border-slate-800 relative z-50">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 flex flex-wrap items-center justify-between gap-3">
+
+            <!-- Dual Location & Reg Badge -->
+            <div class="flex items-center gap-3 sm:gap-4 flex-wrap">
+                <span
+                    class="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-bold border border-emerald-500/30">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span data-i18n="top_reg">Govt. Reg # S-14245/2025</span>
+                </span>
+                <span class="text-slate-300 hidden md:inline-flex items-center gap-1 text-[11px]">
+                    <i class="fa-solid fa-earth-americas text-primary-light"></i>
+                    <span data-i18n="top_loc">Global Secretariat: Toronto, ON, Canada | Field Operations: Fulchari,
+                        Gaibandha, Bangladesh</span>
+                </span>
+            </div>
+
+            <!-- Currency, Language & Quick Actions -->
+            <div class="flex items-center gap-2.5 sm:gap-3.5 ml-auto">
+                <!-- Currency Selector -->
+                <div class="flex items-center bg-white/10 rounded-lg p-0.5 text-[11px] font-bold">
+                    <button type="button" data-currency="CAD"
+                        class="currency-btn px-2 py-0.5 rounded transition-all">CAD</button>
+                    <button type="button" data-currency="USD"
+                        class="currency-btn px-2 py-0.5 rounded transition-all">USD</button>
+                    <button type="button" data-currency="GBP"
+                        class="currency-btn px-2 py-0.5 rounded transition-all">GBP</button>
+                    <button type="button" data-currency="EUR"
+                        class="currency-btn px-2 py-0.5 rounded transition-all">EUR</button>
+                </div>
+
+                <!-- Language Switcher Pill -->
+                <div class="flex items-center bg-white/10 rounded-lg p-0.5 text-[11px]">
+                    <button type="button" data-lang="en"
+                        class="lang-btn px-2 py-0.5 rounded font-black transition-all">EN</button>
+                    <button type="button" data-lang="bn"
+                        class="lang-btn px-2 py-0.5 rounded font-medium transition-all">বাংলা</button>
+                </div>
+
+                <!-- Zakat Calc Trigger -->
+                <button type="button"
+                    class="open-zakat-btn hidden sm:flex items-center gap-1.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-2.5 py-1 rounded-lg text-[11px] transition-all">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span data-i18n="btn_zakat_calc">Zakat Calculator</span>
+                </button>
+
+                <!-- Top Give Button -->
+                <a href="#donate"
+                    class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3 py-1 rounded-lg text-[11px] flex items-center gap-1.5 shadow-xs transition-all">
+                    <i class="fa-solid fa-heart text-amber-300 animate-pulse"></i>
+                    <span data-i18n="btn_donate_now">Give Today</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 2. Main Executive Header / Navigation -->
+    <header id="mainNav"
+        class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+
+                <!-- Brand Identity -->
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0 mr-3 lg:mr-6">
+                    <div
+                        class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden shadow-xs border border-slate-200 bg-white p-0.5 transition-transform group-hover:scale-105 duration-300 shrink-0">
+                        <img src="assets/images/logo.jpg" alt="Ray Chowdhury Foundation Emblem"
+                            class="w-full h-full object-contain">
+                    </div>
+                    <div class="shrink-0">
+                        <div class="flex items-center">
+                            <span
+                                class="text-sm sm:text-base font-black tracking-tight text-primary-navy font-sans leading-tight">
+                                <span data-i18n="brand_name_en">RAY CHOWDHURY</span> <span data-i18n="brand_name_bn"
+                                    class="text-emerald-600 font-bold">FOUNDATION</span>
+                            </span>
+                        </div>
+                        <p
+                            class="text-[9px] sm:text-[10px] text-slate-500 font-medium flex items-center gap-1.5 leading-tight mt-0.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block shrink-0"></span>
+                            <span data-i18n="brand_motto"
+                                class="truncate max-w-[170px] sm:max-w-[210px] xl:max-w-none">Global
+                                Philanthropy for Rural Grassroots Impact</span>
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Executive Navigation Links -->
+                <nav
+                    class="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-6 text-xs xl:text-[13px] font-bold text-slate-700 uppercase tracking-wider whitespace-nowrap shrink-0">
+                    <a href="#about" data-i18n="nav_about"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">About</a>
+                    <a href="#programs" data-i18n="nav_programs"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">Programs</a>
+                    <a href="#diaspora" data-i18n="nav_diaspora"
+                        class="text-primary hover:text-primary-dark transition-colors py-1 flex items-center gap-1 whitespace-nowrap shrink-0">
+                        <i class="fa-solid fa-earth-americas text-emerald-600"></i>
+                        <span>Diaspora</span>
+                    </a>
+                    <a href="#events" data-i18n="nav_events"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">News</a>
+                    <a href="#gallery" data-i18n="nav_gallery"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">Gallery</a>
+                    <a href="#faq" data-i18n="nav_faq"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">FAQ</a>
+                    <a href="#contact" data-i18n="nav_contact"
+                        class="hover:text-primary transition-colors py-1 whitespace-nowrap shrink-0">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="flex items-center gap-2.5 shrink-0 ml-auto lg:ml-4">
+                    <a href="#donate"
+                        class="hidden sm:inline-flex items-center gap-2 px-4 xl:px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs shadow-md hover:shadow-lg transition-all duration-200 shrink-0 whitespace-nowrap">
+                        <i class="fa-solid fa-heart-pulse text-amber-300"></i>
+                        <span data-i18n="nav_cta">Donate Now</span>
+                    </a>
+
+                    <!-- Mobile Hamburger -->
+                    <button id="mobileMenuBtn" type="button" aria-label="Open mobile menu"
+                        class="lg:hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 flex items-center justify-center text-lg transition-colors shrink-0">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Mobile Navigation Drawer & Backdrop -->
+    <div id="mobileMenuBackdrop"
+        class="fixed inset-0 bg-slate-950/70 z-50 hidden backdrop-blur-xs transition-opacity duration-300"></div>
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl flex flex-col hidden">
+        <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+            <div class="flex items-center gap-2.5">
+                <img src="assets/images/logo.jpg" alt="RCF Emblem"
+                    class="w-8 h-8 rounded-lg object-contain border border-slate-200 bg-white p-0.5">
+                <div>
+                    <span class="text-xs font-black text-primary-navy">RAY CHOWDHURY</span>
+                    <span class="text-[10px] text-emerald-600 block font-bold">FOUNDATION</span>
+                </div>
+            </div>
+            <button id="closeMobileMenu" aria-label="Close menu"
+                class="w-8 h-8 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center text-sm transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Links -->
+        <div class="p-5 space-y-1.5 overflow-y-auto flex-1 font-bold text-slate-700 text-xs sm:text-sm">
+            <a href="#about" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_about">About</a>
+            <a href="#programs" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_programs">Programs</a>
+            <a href="#diaspora"
+                class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors text-primary"
+                data-i18n="nav_diaspora">Diaspora</a>
+            <a href="#events" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_events">News</a>
+            <a href="#gallery" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_gallery">Gallery</a>
+            <a href="#faq" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_faq">FAQ</a>
+            <a href="#contact" class="mobile-nav-link block p-2.5 rounded-lg hover:bg-slate-100 transition-colors"
+                data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
+            <button type="button"
+                class="open-zakat-btn w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded-xl text-xs flex items-center justify-center gap-2">
+                <i class="fa-solid fa-calculator"></i>
+                <span data-i18n="btn_zakat_calc">Zakat Calculator</span>
+            </button>
+            <a href="#donate"
+                class="mobile-nav-link w-full py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm">
+                <i class="fa-solid fa-heart text-amber-300"></i>
+                <span data-i18n="nav_cta">Donate Now</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 4. Hero Section -->
+    <section id="home"
+        class="relative hero-corporate-bg pt-10 sm:pt-16 pb-16 sm:pb-24 border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+
+                <!-- Left Column: Inspiring International Copy -->
+                <div class="lg:col-span-7 space-y-6">
+
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200/80 px-3.5 py-1.5 rounded-full shadow-2xs">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+                        <span data-i18n="hero_tag"
+                            class="text-primary text-[11px] sm:text-xs font-bold tracking-wide">Official Non-Profit
+                            Organization • Govt Reg: S-14245/2025</span>
+                    </div>
+
+                    <h1
+                        class="text-3xl sm:text-5xl lg:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight">
+                        <span data-i18n="hero_title_pre">Bridging Global Compassion With</span>
+                        <span data-i18n="hero_title_highlight"
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-600 block mt-1">Grassroots
+                            Impact</span>
+                    </h1>
+
+                    <p data-i18n="hero_desc"
+                        class="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl font-normal">
+                        Connecting Toronto and the worldwide diaspora to empower climate-vulnerable communities along
+                        the Brahmaputra-Jamuna river basin in Fulchari, Gaibandha through sustainable education, clean
+                        water, and poverty alleviation.
+                    </p>
+
+                    <!-- Call To Actions -->
+                    <div class="pt-2 flex flex-wrap items-center gap-3.5">
+                        <a href="#donate"
+                            class="px-6 sm:px-8 py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-xl transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-heart text-amber-300 animate-pulse"></i>
+                            <span data-i18n="hero_btn_donate">Make an Immediate Impact</span>
+                        </a>
+                        <a href="#programs"
+                            class="px-5 sm:px-6 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm transition-all border border-slate-200">
+                            <span data-i18n="hero_btn_explore">Explore Programs</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Signals Bar -->
+                    <div class="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-700">
+                        <div>
+                            <span class="text-lg sm:text-2xl font-black text-primary block"
+                                data-i18n="stat_1_val">100%</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-medium"
+                                data-i18n="stat_1_lbl">Direct Program Allocation</span>
+                        </div>
+                        <div>
+                            <span class="text-lg sm:text-2xl font-black text-emerald-600 block"
+                                data-i18n="stat_2_val">S-14245</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-medium" data-i18n="stat_2_lbl">Govt
+                                Certified Registration</span>
+                        </div>
+                        <div>
+                            <span class="text-lg sm:text-2xl font-black text-primary block"
+                                data-i18n="stat_3_val">12,000+</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-medium" data-i18n="stat_3_lbl">Char
+                                Beneficiaries</span>
+                        </div>
+                        <div>
+                            <span class="text-lg sm:text-2xl font-black text-amber-600 block"
+                                data-i18n="stat_4_val">24/7</span>
+                            <span class="text-[11px] sm:text-xs text-slate-500 font-medium"
+                                data-i18n="stat_4_lbl">Global Donor Liaison</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: High-Trust Visual Montage with Official Proof -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+
+                        <!-- Main Verified Office Inauguration Frame -->
+                        <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 group">
+                            <img src="assets/images/office-inauguration.jpg"
+                                alt="Official Office Inauguration and Signboard of Ray Chowdhury Foundation"
+                                class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="p-4 bg-white border-t border-slate-100">
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="font-bold text-slate-900 flex items-center gap-1.5">
+                                        <i class="fa-solid fa-ribbon text-emerald-600"></i> Permanent Office
+                                        Inauguration
+                                    </span>
+                                    <span
+                                        class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-mono">Reg
+                                        # S-14245/2025</span>
+                                </div>
+                                <p class="text-[11px] text-slate-500 mt-1">Village: Udakhali, Fulchari, Gaibandha,
+                                    Bangladesh.</p>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Floating Card: Quran Literacy Initiative -->
+                        <div
+                            class="hidden sm:flex items-center gap-3 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-xl border border-slate-200/90 absolute -bottom-6 -left-6 max-w-xs transition-transform hover:-translate-y-1">
+                            <img src="assets/images/quran-distribution.jpg" alt="Quran Distribution"
+                                class="w-14 h-14 rounded-lg object-cover shrink-0">
+                            <div>
+                                <span
+                                    class="text-[10px] font-bold text-emerald-700 uppercase tracking-wider block">Education
+                                    & Zakat</span>
+                                <p class="text-xs font-black text-slate-900 leading-tight">Quran Literacy Drive for
+                                    Rural Madrasa Students</p>
+                            </div>
+                        </div>
+
+                        <!-- Third Floating Badge: Toronto Diaspora Hub -->
+                        <div
+                            class="hidden sm:flex items-center gap-2.5 bg-primary-navy text-white px-3.5 py-2.5 rounded-xl shadow-xl border border-slate-700 absolute -top-5 -right-4 transition-transform hover:-translate-y-1">
+                            <div
+                                class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm shrink-0">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] text-amber-400 font-bold block"
+                                    data-i18n="hero_badge_transparency">100% Direct Delivery</span>
+                                <span class="text-[11px] text-slate-300" data-i18n="hero_badge_transparency_sub">Zero
+                                    administrative leakage</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. About Us / Mission Section -->
+    <section id="about" class="py-16 sm:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+
+                <!-- Imagery Column -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+                        <img src="assets/images/ceremony-dua.jpg" alt="Ray Chowdhury Foundation Community Dua Gathering"
+                            class="w-full h-64 sm:h-72 object-cover">
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-hands-praying"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-900 block" data-i18n="e2_title">Special Blessing &
+                                Dua Mahfil with Community Elders</span>
+                            <span class="text-[11px] text-slate-500" data-i18n="e2_desc">Scholars, village elders, and
+                                families gathered to offer prayers for the prosperity of donors and the sustainable
+                                upliftment of the region.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text & Pillars Column -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="inline-block">
+                        <span data-i18n="about_badge"
+                            class="text-primary font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">Institutional
+                            Profile & Mission</span>
+                    </div>
+
+                    <h2 data-i18n="about_title"
+                        class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-snug">
+                        A Global Philanthropic Bridge for Vulnerable Riverbank Communities
+                    </h2>
+
+                    <p data-i18n="about_lead" class="text-slate-700 text-sm sm:text-base leading-relaxed font-semibold">
+                        Ray Chowdhury Foundation (RCF) is a registered humanitarian organization established to
+                        transform the lives of underserved families living on the erosion-prone river islands (chars) of
+                        Fulchari, Gaibandha.
+                    </p>
+
+                    <p data-i18n="about_p1" class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Guided by our founding motto <em>'Every Life Deserves a Future'</em>, we unite expatriate
+                        professionals in North America and Europe with seasoned field teams on the ground in Bangladesh
+                        to deliver swift, audited, and dignified community empowerment.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="pt-3 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-certificate text-primary text-lg mb-2"></i>
+                            <h4 data-i18n="about_f1_t" class="text-xs font-bold text-slate-900">Certified Legal
+                                Registration</h4>
+                            <p data-i18n="about_f1_d" class="text-[11px] text-slate-500 mt-1">Formally chartered under
+                                the Government of Bangladesh, Certificate No: S-14245/2025.</p>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-receipt text-emerald-600 text-lg mb-2"></i>
+                            <h4 data-i18n="about_f2_t" class="text-xs font-bold text-slate-900">Direct Verification &
+                                Proof</h4>
+                            <p data-i18n="about_f2_d" class="text-[11px] text-slate-500 mt-1">Photographic records,
+                                beneficiary logs, and serialized digital receipts for every single donation.</p>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-shield-halved text-amber-600 text-lg mb-2"></i>
+                            <h4 data-i18n="about_f3_t" class="text-xs font-bold text-slate-900">Zakat & Sadaqah
+                                Compliance</h4>
+                            <p data-i18n="about_f3_d" class="text-[11px] text-slate-500 mt-1">100% Shariah-compliant
+                                fund segregation dedicated exclusively to vetted, eligible recipients.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Signature Community Programs -->
+    <section id="programs" class="py-16 sm:py-24 bg-slate-50 relative border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span data-i18n="prog_badge"
+                    class="text-primary font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">Sustainable
+                    Interventions</span>
+                <h2 data-i18n="prog_title" class="text-2xl sm:text-4xl font-black text-slate-900 mt-2.5">Signature
+                    Community Programs</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+                <p data-i18n="prog_desc" class="text-slate-600 mt-3 text-xs sm:text-sm">Addressing systemic poverty and
+                    climate vulnerability through strategic, measurable interventions.</p>
+            </div>
+
+            <!-- Program Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- 1. Quran Literacy -->
+                <div class="corporate-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-book-quran"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200"
+                            data-i18n="p1_tag">Education</span>
+                        <h3 data-i18n="p1_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">Quran
+                            Literacy & Madrasa Support</h3>
+                        <p data-i18n="p1_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">Providing
+                            holy Qurans, educational stationery, and nutritious meals to vulnerable orphan students in
+                            remote village madrasas.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#donate"
+                            class="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1">Sponsor
+                            A Student <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                        <span class="text-[11px] font-mono font-bold text-slate-400">100+ Books Gifted</span>
+                    </div>
+                </div>
+
+                <!-- 2. Flood & Erosion -->
+                <div class="corporate-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-100 text-primary flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-house-flood-water"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-primary bg-blue-50 px-2 py-0.5 rounded border border-blue-200"
+                            data-i18n="p2_tag">Disaster Relief</span>
+                        <h3 data-i18n="p2_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">Emergency
+                            Flood & River Erosion Relief</h3>
+                        <p data-i18n="p2_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">Delivering
+                            rapid life-saving food baskets, clean drinking water kits, and shelter repair packages
+                            during seasonal monsoon floods.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#donate"
+                            class="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1">Provide
+                            Relief Kit <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                        <span class="text-[11px] font-mono font-bold text-slate-400">Rapid Response</span>
+                    </div>
+                </div>
+
+                <!-- 3. Widow Empowerment -->
+                <div class="corporate-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-person-dress"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200"
+                            data-i18n="p3_tag">Economic Dignity</span>
+                        <h3 data-i18n="p3_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">Widow
+                            Empowerment & Micro-Grants</h3>
+                        <p data-i18n="p3_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">Equipping
+                            underprivileged women and single mothers with sewing machines and livestock micro-grants for
+                            financial independence.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#donate"
+                            class="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1">Gift
+                            A Sewing Machine <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                        <span class="text-[11px] font-mono font-bold text-slate-400">Sustainable</span>
+                    </div>
+                </div>
+
+                <!-- 4. Clean Water & Sanitation -->
+                <div class="corporate-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-faucet-drip"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded border border-cyan-200"
+                            data-i18n="p4_tag">Clean Water</span>
+                        <h3 data-i18n="p4_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">Deep
+                            Tube-Well & Safe Sanitation</h3>
+                        <p data-i18n="p4_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Constructing arsenic-free deep tube-wells and hygienic sanitation stations across remote,
+                            disconnected char settlements.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#donate"
+                            class="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1">Fund
+                            A Tube-Well <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                        <span class="text-[11px] font-mono font-bold text-slate-400">Sadaqah Jariyah</span>
+                    </div>
+                </div>
+
+                <!-- 5. Winter Warmth -->
+                <div class="corporate-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200"
+                            data-i18n="p5_tag">Winter Relief</span>
+                        <h3 data-i18n="p5_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">Seasonal
+                            Winter Warmth Drives</h3>
+                        <p data-i18n="p5_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Distributing high-grade warm blankets and thermal garments to elderly residents and infants
+                            exposed to severe northern winter winds.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <a href="#donate"
+                            class="text-xs font-bold text-primary hover:text-primary-dark flex items-center gap-1">Donate
+                            Blankets <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                        <span class="text-[11px] font-mono font-bold text-slate-400">Annual Drive</span>
+                    </div>
+                </div>
+
+                <!-- 6. 100% Segregated Zakat -->
+                <div
+                    class="corporate-card rounded-2xl p-6 flex flex-col justify-between bg-gradient-to-br from-white to-emerald-50/40">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <span
+                            class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded border border-emerald-300"
+                            data-i18n="p6_tag">Faith & Charity</span>
+                        <h3 data-i18n="p6_title" class="text-base sm:text-lg font-bold text-slate-900 mt-2">100%
+                            Segregated Zakat & Sadaqah</h3>
+                        <p data-i18n="p6_desc" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">Direct
+                            financial assistance delivered directly into the hands of the most destitute char families,
+                            ensuring true Shariah compliance.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <button type="button"
+                            class="open-zakat-btn text-xs font-bold text-emerald-700 hover:text-emerald-800 flex items-center gap-1">Calculate
+                            Zakat <i class="fa-solid fa-calculator text-[10px]"></i></button>
+                        <span class="text-[11px] font-mono font-bold text-emerald-700">0% Admin Fee</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Global Diaspora & Toronto Liaison Section -->
+    <section id="diaspora"
+        class="py-16 sm:py-24 bg-gradient-to-br from-primary-navy via-slate-900 to-primary-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span data-i18n="diaspora_badge"
+                    class="text-amber-400 font-bold text-xs sm:text-sm tracking-wider uppercase bg-amber-400/10 border border-amber-400/30 px-3.5 py-1 rounded-full">Global
+                    Diaspora Network</span>
+                <h2 data-i18n="diaspora_title" class="text-2xl sm:text-4xl font-black text-white mt-3 leading-tight">
+                    Connecting Toronto, North America & Europe to Grassroots Bangladesh</h2>
+                <div class="w-16 h-1 bg-amber-400 mx-auto mt-3 rounded-full"></div>
+                <p data-i18n="diaspora_desc" class="text-slate-300 mt-4 text-xs sm:text-base leading-relaxed">Whether
+                    you reside in Toronto (GTA), Ottawa, Montreal, New York, or London, your philanthropy empowers
+                    vulnerable families with transparent reporting, digital receipts, and real-time project updates.</p>
+            </div>
+
+            <!-- Diaspora Channels Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Channel 1: Canadian Interac e-Transfer -->
+                <div
+                    class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:border-amber-400/40 transition-colors">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-4 border border-amber-400/30">
+                            <i class="fa-solid fa-envelope-circle-check"></i>
+                        </div>
+                        <h4 data-i18n="diaspora_c1_title" class="text-base sm:text-lg font-bold text-white">Canadian
+                            Interac e-Transfer</h4>
+                        <p data-i18n="diaspora_c1_desc" class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                            Direct auto-deposit for Canadian donors via RBC, TD, Scotiabank, BMO, and CIBC with zero
+                            transaction loss.</p>
+                        <div
+                            class="mt-4 p-2.5 rounded-lg bg-black/30 border border-white/10 font-mono text-xs text-amber-300 break-all">
+                            donations@raychowdhuryfoundation.org
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <button onclick="copyToClipboard('donations@raychowdhuryfoundation.org', 'diasporaCopyBtn')"
+                            id="diasporaCopyBtn"
+                            class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
+                            <i class="fa-regular fa-copy"></i> Copy Auto-Deposit Email
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Channel 2: Global Credit Cards & Express Wallets -->
+                <div
+                    class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:border-blue-400/40 transition-colors">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-4 border border-blue-400/30">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <h4 data-i18n="diaspora_c2_title" class="text-base sm:text-lg font-bold text-white">Credit /
+                            Debit Cards & Digital Wallets</h4>
+                        <p data-i18n="diaspora_c2_desc" class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                            Instant international giving via Visa, Mastercard, AMEX, Apple Pay, Google Pay, and PayPal.
+                        </p>
+                        <div class="flex items-center gap-2 mt-4 text-slate-300 text-lg">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                            <i class="fa-brands fa-apple-pay text-2xl"></i>
+                            <i class="fa-brands fa-google-pay text-2xl"></i>
+                            <i class="fa-brands fa-paypal"></i>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="#donate"
+                            class="text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1.5">
+                            Donate with Card / Wallet <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Channel 3: International Wire Transfers (SWIFT) -->
+                <div
+                    class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col justify-between hover:border-emerald-400/40 transition-colors">
+                    <div>
+                        <div
+                            class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4 border border-emerald-400/30">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h4 data-i18n="diaspora_c3_title" class="text-base sm:text-lg font-bold text-white">
+                            International Wire Transfers (SWIFT / IBAN)</h4>
+                        <p data-i18n="diaspora_c3_desc" class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                            Direct corporate matching, family endowments, and institutional bank wire facilities with
+                            audited tax reporting.</p>
+                        <div
+                            class="mt-4 p-2.5 rounded-lg bg-black/30 border border-white/10 text-[11px] text-emerald-300">
+                            Account: Ray Chowdhury Foundation
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10">
+                        <a href="#donate"
+                            class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5">
+                            View Bank Wire Credentials <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. THE INTERNATIONAL DONATION CONSOLE (Strictly International, All International Gateways) -->
+    <section id="donate" class="py-16 sm:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span data-i18n="donate_badge"
+                    class="text-emerald-700 font-bold text-xs sm:text-sm tracking-wider uppercase bg-emerald-50 px-3.5 py-1 rounded-full border border-emerald-200">International
+                    Secure Giving Hub</span>
+                <h2 data-i18n="donate_title" class="text-2xl sm:text-4xl font-black text-slate-900 mt-2.5">Empower a
+                    Life Today — 100% Transparent Philanthropy</h2>
+                <div class="w-16 h-1 bg-emerald-600 mx-auto mt-3 rounded-full"></div>
+                <p data-i18n="donate_desc" class="text-slate-600 mt-3 text-xs sm:text-sm">All donations are processed
+                    with 256-bit bank-grade encryption. Instant digital receipts and field progress reports are issued
+                    automatically.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Main Donation Configuration Box -->
+                <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+
+                    <!-- Frequency Switcher (Once vs Monthly) -->
+                    <div class="flex items-center justify-between mb-6 pb-5 border-b border-slate-100 flex-wrap gap-3">
+                        <h3 data-i18n="donate_box_title" class="text-base sm:text-lg font-bold text-slate-900">
+                            International Giving Console</h3>
+
+                        <div class="bg-slate-100 p-1 rounded-xl flex items-center text-xs font-bold">
+                            <button type="button" data-freq="once"
+                                class="donation-freq-btn px-3 py-1.5 rounded-lg bg-primary text-white shadow-xs font-black transition-all">
+                                <span data-i18n="donate_freq_once">Give Once</span>
+                            </button>
+                            <button type="button" data-freq="monthly"
+                                class="donation-freq-btn px-3 py-1.5 rounded-lg bg-transparent text-slate-600 hover:text-slate-900 transition-all">
+                                <span data-i18n="donate_freq_monthly">Give Monthly 💖 (Recurring)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Impact Banner -->
+                    <div id="donationImpactBanner"
+                        class="mb-5 p-3 rounded-xl bg-emerald-50/50 border border-emerald-200 text-xs text-emerald-900 flex items-center leading-relaxed">
+                        <i class="fa-solid fa-shield-check text-emerald-600 mr-2 text-sm"></i>
+                        <span><strong>Immediate Relief:</strong> 100% of your gift is directly converted into emergency
+                            food, clean water, and education in Fulchari.</span>
+                    </div>
+
+                    <!-- Step 1: Giving Cause Selection -->
+                    <div class="space-y-2">
+                        <label data-i18n="donate_step1" class="block text-xs sm:text-sm font-bold text-slate-700">1.
+                            Select Giving Designation:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="donation_cause" value="Education & Quran" checked
+                                    class="peer sr-only">
+                                <div
+                                    class="p-3 text-center rounded-xl border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary transition-all">
+                                    <i class="fa-solid fa-book-quran text-lg block mb-1"></i>
+                                    <span data-i18n="c_edu" class="text-xs font-bold block">Education & Quran</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="donation_cause" value="Orphan Sponsorship"
+                                    class="peer sr-only">
+                                <div
+                                    class="p-3 text-center rounded-xl border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary transition-all">
+                                    <i class="fa-solid fa-child text-lg block mb-1"></i>
+                                    <span data-i18n="c_orphan" class="text-xs font-bold block">Orphan Sponsorship</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="donation_cause" value="Emergency Food Relief"
+                                    class="peer sr-only">
+                                <div
+                                    class="p-3 text-center rounded-xl border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary transition-all">
+                                    <i class="fa-solid fa-bowl-rice text-lg block mb-1"></i>
+                                    <span data-i18n="c_food" class="text-xs font-bold block">Emergency Food
+                                        Relief</span>
+                                </div>
+                            </label>
+
+                            <label class="cursor-pointer">
+                                <input type="radio" name="donation_cause" value="General Humanitarian Fund"
+                                    class="peer sr-only">
+                                <div
+                                    class="p-3 text-center rounded-xl border border-slate-200 peer-checked:border-primary peer-checked:bg-primary/5 peer-checked:text-primary transition-all">
+                                    <i class="fa-solid fa-globe text-lg block mb-1"></i>
+                                    <span data-i18n="c_gen" class="text-xs font-bold block">General Fund</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Choose Contribution Amount -->
+                    <div class="space-y-2.5 mt-5">
+                        <label data-i18n="donate_step2" class="block text-xs sm:text-sm font-bold text-slate-700">2.
+                            Choose Contribution Amount:</label>
+                        <div class="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                            <button type="button" data-amount="35"
+                                class="donation-amount-btn py-2.5 px-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm hover:border-primary transition-all">
+                                CA$ 35
+                            </button>
+                            <button type="button" data-amount="75"
+                                class="donation-amount-btn py-2.5 px-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm hover:border-primary transition-all">
+                                CA$ 75
+                            </button>
+                            <button type="button" data-amount="150"
+                                class="donation-amount-btn py-2.5 px-2 rounded-xl border border-primary bg-primary text-white font-bold text-xs sm:text-sm shadow-2xs transition-all">
+                                CA$ 150
+                            </button>
+                            <button type="button" data-amount="300"
+                                class="donation-amount-btn py-2.5 px-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm hover:border-primary transition-all">
+                                CA$ 300
+                            </button>
+                            <button type="button" data-amount="750"
+                                class="donation-amount-btn py-2.5 px-2 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 font-bold text-xs sm:text-sm hover:border-primary transition-all">
+                                CA$ 750
+                            </button>
+                        </div>
+
+                        <!-- Custom Amount Input -->
+                        <div class="relative mt-2">
+                            <div
+                                class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400 font-bold text-sm">
+                                <i class="fa-solid fa-coins"></i>
+                            </div>
+                            <input type="number" id="customAmountInput" value="150" placeholder="Custom amount..."
+                                class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-slate-800 font-bold text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Selected Amount Badge -->
+                    <div
+                        class="mt-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between">
+                        <div>
+                            <span data-i18n="donate_assigned_label"
+                                class="text-[11px] text-amber-800 font-medium block">Your Selected Contribution:</span>
+                            <span id="selectedAmountDisplay" class="text-xl font-black text-amber-950 font-sans">CA$
+                                150</span>
+                        </div>
+                        <span data-i18n="donate_jariya"
+                            class="text-[10px] font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300">Perpetual
+                            Sadaqah Jariyah</span>
+                    </div>
+
+                    <!-- Step 3: Donor Identification -->
+                    <div class="mt-6 pt-5 border-t border-slate-100 space-y-3.5">
+                        <h4 class="text-xs sm:text-sm font-bold text-slate-800">3. Donor Information (For Digital Tax
+                            Receipt):</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div>
+                                <label data-i18n="f_name_lbl"
+                                    class="block text-[11px] font-bold text-slate-600 mb-1">Donor Full Name *</label>
+                                <input type="text" id="donorName" required placeholder="e.g. Tariq Rahman"
+                                    class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                            </div>
+                            <div>
+                                <label data-i18n="f_email_lbl"
+                                    class="block text-[11px] font-bold text-slate-600 mb-1">Email (For Digital Tax
+                                    Receipt) *</label>
+                                <input type="email" id="donorEmail" required placeholder="tariq@example.com"
+                                    class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                            </div>
+                            <div>
+                                <label data-i18n="f_phone_lbl"
+                                    class="block text-[11px] font-bold text-slate-600 mb-1">Phone / WhatsApp *</label>
+                                <input type="tel" id="donorPhone" required placeholder="+1 (647) xxx-xxxx"
+                                    class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: International Payment Gateway Tabs -->
+                    <div class="mt-6 pt-5 border-t border-slate-100 space-y-4">
+                        <label class="block text-xs sm:text-sm font-bold text-slate-800">4. Select International Payment
+                            Method:</label>
+
+                        <!-- Gateway Tabs -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <button type="button" data-target="tabCard"
+                                class="gateway-tab-btn active p-2.5 text-center rounded-xl border border-primary bg-white text-primary text-xs font-bold transition-all">
+                                <i class="fa-solid fa-credit-card block text-base mb-1"></i>
+                                <span data-i18n="gateway_tab_card">Credit / Debit Card</span>
+                            </button>
+                            <button type="button" data-target="tabWallets"
+                                class="gateway-tab-btn p-2.5 text-center rounded-xl border border-transparent bg-slate-100 text-slate-500 text-xs font-bold hover:bg-slate-200 transition-all">
+                                <i class="fa-brands fa-apple-pay block text-base mb-1"></i>
+                                <span data-i18n="gateway_tab_wallets">Apple / Google Pay</span>
+                            </button>
+                            <button type="button" data-target="tabInterac"
+                                class="gateway-tab-btn p-2.5 text-center rounded-xl border border-transparent bg-slate-100 text-slate-500 text-xs font-bold hover:bg-slate-200 transition-all">
+                                <i class="fa-solid fa-envelope-circle-check block text-base mb-1"></i>
+                                <span data-i18n="gateway_tab_interac">Interac e-Transfer</span>
+                            </button>
+                            <button type="button" data-target="tabWire"
+                                class="gateway-tab-btn p-2.5 text-center rounded-xl border border-transparent bg-slate-100 text-slate-500 text-xs font-bold hover:bg-slate-200 transition-all">
+                                <i class="fa-solid fa-building-columns block text-base mb-1"></i>
+                                <span data-i18n="gateway_tab_wire">International Wire</span>
+                            </button>
+                        </div>
+
+                        <!-- Pane 1: Credit / Debit Card -->
+                        <div id="tabCard" class="gateway-pane space-y-4 pt-2">
+
+                            <!-- Live Credit Card Preview Component -->
+                            <div class="credit-card-preview">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="card-chip"></div>
+                                    <div id="cardBrandLogo">
+                                        <i class="fa-brands fa-cc-visa text-2xl text-blue-400"></i>
+                                    </div>
+                                </div>
+                                <div id="previewCardNumber"
+                                    class="font-mono text-base sm:text-xl font-bold tracking-widest mb-4">
+                                    •••• •••• •••• ••••
+                                </div>
+                                <div class="flex items-end justify-between text-xs">
+                                    <div>
+                                        <span
+                                            class="text-[9px] uppercase tracking-wider text-slate-400 block">Cardholder</span>
+                                        <span id="previewCardName" class="font-bold tracking-wider">DONOR NAME</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span
+                                            class="text-[9px] uppercase tracking-wider text-slate-400 block">Expires</span>
+                                        <span id="previewCardExp" class="font-mono font-bold">MM/YY</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card Input Form -->
+                            <form
+                                onsubmit="processInternationalDonation(event, 'Credit / Debit Card (Stripe 256-Bit SSL)');"
+                                class="space-y-3">
+                                <div>
+                                    <label data-i18n="card_num_lbl"
+                                        class="block text-[11px] font-bold text-slate-600 mb-1">Card Number</label>
+                                    <div class="relative">
+                                        <input type="text" id="ccNumber" required placeholder="4532 8920 1204 8839"
+                                            maxlength="19"
+                                            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-mono text-xs sm:text-sm focus:border-primary focus:outline-none">
+                                        <div
+                                            class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-400 gap-1.5 text-base">
+                                            <i class="fa-brands fa-cc-visa"></i>
+                                            <i class="fa-brands fa-cc-mastercard"></i>
+                                            <i class="fa-brands fa-cc-amex"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                                    <div>
+                                        <label data-i18n="card_exp_lbl"
+                                            class="block text-[11px] font-bold text-slate-600 mb-1">Expiration
+                                            (MM/YY)</label>
+                                        <input type="text" id="ccExp" required placeholder="12/28" maxlength="5"
+                                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs sm:text-sm focus:border-primary focus:outline-none">
+                                    </div>
+                                    <div>
+                                        <label data-i18n="card_cvc_lbl"
+                                            class="block text-[11px] font-bold text-slate-600 mb-1">CVC / CVV</label>
+                                        <input type="text" id="ccCvc" required placeholder="382" maxlength="4"
+                                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-mono text-xs sm:text-sm focus:border-primary focus:outline-none">
+                                    </div>
+                                    <div class="col-span-2 sm:col-span-1">
+                                        <label data-i18n="card_country_lbl"
+                                            class="block text-[11px] font-bold text-slate-600 mb-1">Postal / Zip</label>
+                                        <input type="text" id="ccPostal" placeholder="M5V 2T6"
+                                            class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none uppercase">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label data-i18n="card_name_lbl"
+                                        class="block text-[11px] font-bold text-slate-600 mb-1">Cardholder Name</label>
+                                    <input type="text" id="ccName" required placeholder="Name on card"
+                                        class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full py-3.5 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl shadow-md transition-all text-xs sm:text-sm flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-lock text-amber-300"></i>
+                                    <span data-i18n="btn_donate_card">Complete Secure Donation</span>
+                                </button>
+
+                                <p
+                                    class="text-center text-[10px] text-slate-400 flex items-center justify-center gap-1.5 pt-1">
+                                    <i class="fa-solid fa-shield-halved text-emerald-600"></i>
+                                    <span>Protected by 256-bit bank-grade encryption & PCI-DSS Level 1
+                                        compliance.</span>
+                                </p>
+                            </form>
+
+                        </div>
+
+                        <!-- Pane 2: Apple Pay, Google Pay, PayPal -->
+                        <div id="tabWallets" class="gateway-pane hidden space-y-3 pt-2">
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Experience fast, 1-touch donation checkout using your device biometric authentication or
+                                stored payment methods:
+                            </p>
+
+                            <!-- Apple Pay Button -->
+                            <button type="button" onclick="processInternationalDonation(event, 'Apple Pay');"
+                                class="btn-apple-pay w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-xs">
+                                <i class="fa-brands fa-apple text-xl"></i>
+                                <span>Pay with Apple Pay</span>
+                            </button>
+
+                            <!-- Google Pay Button -->
+                            <button type="button" onclick="processInternationalDonation(event, 'Google Pay');"
+                                class="btn-google-pay w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-xs">
+                                <i class="fa-brands fa-google text-lg"></i>
+                                <span>Donate with Google Pay</span>
+                            </button>
+
+                            <!-- PayPal Button -->
+                            <button type="button" onclick="processInternationalDonation(event, 'PayPal');"
+                                class="btn-paypal w-full py-3 rounded-xl font-black text-sm flex items-center justify-center gap-2 shadow-xs">
+                                <i class="fa-brands fa-paypal text-lg"></i>
+                                <span>Donate with PayPal</span>
+                            </button>
+                        </div>
+
+                        <!-- Pane 3: Canadian Interac e-Transfer -->
+                        <div id="tabInterac" class="gateway-pane hidden space-y-3 pt-2">
+                            <div class="p-4 rounded-xl bg-amber-50 border border-amber-200">
+                                <div class="flex items-center gap-2 text-xs font-bold text-amber-900 mb-1">
+                                    <i class="fa-solid fa-map-pin text-amber-600"></i>
+                                    <span>Canadian Donor Auto-Deposit (CAD)</span>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    Log in to your Canadian financial institution (RBC, TD, Scotiabank, BMO, CIBC,
+                                    Desjardins, Tangerine) and send e-Transfer to:
+                                </p>
+                                <div
+                                    class="mt-3 p-3 bg-white rounded-lg border border-amber-300 flex items-center justify-between">
+                                    <div>
+                                        <span class="text-[10px] text-slate-500 font-bold uppercase block">Recipient
+                                            Email (Auto-Deposit)</span>
+                                        <span
+                                            class="font-mono font-bold text-xs sm:text-sm text-slate-900">donations@raychowdhuryfoundation.org</span>
+                                    </div>
+                                    <button type="button"
+                                        onclick="copyToClipboard('donations@raychowdhuryfoundation.org', 'copyInteracTabBtn');"
+                                        id="copyInteracTabBtn"
+                                        class="px-3 py-1 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded text-xs transition-colors">
+                                        <i class="fa-regular fa-copy mr-1"></i> Copy
+                                    </button>
+                                </div>
+                                <div class="mt-3 text-[11px] text-slate-500 space-y-1">
+                                    <div>• <strong>Recipient Name:</strong> Ray Chowdhury Foundation</div>
+                                    <div>• <strong>Security Question:</strong> Not required (Direct Auto-Deposit is
+                                        enabled).</div>
+                                    <div>• <strong>Transfer Note:</strong> Please include your email or project name in
+                                        the transfer notes for serialized receipt delivery.</div>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                onclick="processInternationalDonation(event, 'Canadian Interac e-Transfer');"
+                                class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>I Have Sent an Interac e-Transfer (Generate My Receipt)</span>
+                            </button>
+                        </div>
+
+                        <!-- Pane 4: International Bank Wire (SWIFT / IBAN) -->
+                        <div id="tabWire" class="gateway-pane hidden space-y-3 pt-2">
+                            <div
+                                class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-2 text-slate-700">
+                                <div class="font-bold text-primary text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    <span>International Wire & SWIFT Transfer Details</span>
+                                </div>
+                                <p class="text-[11px] text-slate-500">
+                                    Recommended for major endowments, corporate matching, and wire transfers from North
+                                    America & Europe:
+                                </p>
+
+                                <div
+                                    class="bg-white p-3 rounded-lg border border-slate-200 space-y-1.5 font-mono text-[11px]">
+                                    <div class="flex justify-between items-center">
+                                        <span>Beneficiary:</span>
+                                        <strong class="font-sans">Ray Chowdhury Foundation</strong>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>Bank Name:</span>
+                                        <strong class="font-sans">Standard Chartered / Islami Bank PLC</strong>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>SWIFT / BIC:</span>
+                                        <strong>IBBLBDDH / SCBLBDDX</strong>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>Account No:</span>
+                                        <strong>2050-1840-2001-92</strong>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>Branch:</span>
+                                        <span class="font-sans">Head Office / Gaibandha Division</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                onclick="processInternationalDonation(event, 'International Bank Wire (SWIFT)');"
+                                class="w-full py-3 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                                <span>I Have Initiated a Wire Transfer (Generate Receipt)</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Institutional Credentials & Direct Proof -->
+                <div class="lg:col-span-5 space-y-4">
+
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-primary-navy text-white p-6 rounded-2xl shadow-md border border-slate-800 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400">Governance &
+                                Audit</span>
+                            <span
+                                class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-0.5 rounded-full font-bold">100%
+                                Verified</span>
+                        </div>
+
+                        <h4 data-i18n="acc_info_title" class="text-base font-bold text-white">International Banking &
+                            Interac Credentials</h4>
+                        <p data-i18n="acc_info_desc" class="text-xs text-slate-300 leading-relaxed">All gifts are
+                            governed with audited oversight and acknowledged with official serialized receipts.</p>
+
+                        <!-- Quick Canadian Interac Summary -->
+                        <div
+                            class="p-3.5 rounded-xl bg-amber-500/15 border border-amber-400/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+                            <div class="flex items-center gap-2.5 min-w-0">
+                                <div
+                                    class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 text-xs font-black shrink-0 font-sans">
+                                    CAD
+                                </div>
+                                <div class="min-w-0">
+                                    <span class="text-[10px] text-amber-300 font-bold uppercase block">Interac
+                                        Auto-Deposit (Canada)</span>
+                                    <span
+                                        class="text-xs font-mono font-bold text-white break-all">donations@raychowdhuryfoundation.org</span>
+                                </div>
+                            </div>
+                            <button type="button"
+                                onclick="copyToClipboard('donations@raychowdhuryfoundation.org', 'summaryCopyInterac');"
+                                id="summaryCopyInterac"
+                                class="px-2.5 py-1 bg-white/15 hover:bg-white/25 rounded text-[11px] font-bold text-white transition-colors shrink-0 self-start sm:self-center">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Registration Badge Box -->
+                        <div
+                            class="p-3.5 rounded-xl bg-white/5 border border-white/10 space-y-2 text-xs text-slate-300">
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">Govt. Certificate:</span>
+                                <span class="font-mono font-bold text-emerald-400">S-14245/2025</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">Jurisdiction:</span>
+                                <span class="font-bold text-white">Bangladesh & Toronto Secretariat</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-slate-400">Audit Status:</span>
+                                <span class="text-emerald-400 font-bold">Fully Compliant & Certified</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Direct Tax Receipt & Guarantee Callout -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 flex items-start gap-3.5">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-file-shield"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Instant Digital Receipt Guarantee
+                            </h4>
+                            <p class="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
+                                Every completed contribution generates a serialized donation certificate and receipt.
+                                You may download, print, or receive it directly in your inbox.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9. Photo & Media Archive Section -->
+    <section id="gallery" class="py-16 sm:py-24 bg-slate-50 relative border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span data-i18n="gallery_badge"
+                    class="text-primary font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">Field
+                    Documentation</span>
+                <h2 data-i18n="gallery_title" class="text-2xl sm:text-4xl font-black text-slate-900 mt-2.5">Photo &
+                    Media Archive</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+                <p data-i18n="gallery_desc" class="text-slate-600 mt-3 text-xs sm:text-sm">Authentic photographic
+                    documentation from our field activities, inauguration ceremonies, and educational drives.</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex items-center justify-center gap-2 mb-8 flex-wrap">
+                <button type="button" data-filter="all"
+                    class="gallery-tab-btn bg-primary text-white px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-xs"
+                    data-i18n="g_tab_all">All Records</button>
+                <button type="button" data-filter="inauguration"
+                    class="gallery-tab-btn bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold hover:bg-slate-100 transition-all"
+                    data-i18n="g_tab_inauguration">Headquarters Inauguration</button>
+                <button type="button" data-filter="education"
+                    class="gallery-tab-btn bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold hover:bg-slate-100 transition-all"
+                    data-i18n="g_tab_education">Quran Distribution</button>
+                <button type="button" data-filter="prayer"
+                    class="gallery-tab-btn bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold hover:bg-slate-100 transition-all"
+                    data-i18n="g_tab_prayer">Community Dua</button>
+            </div>
+
+            <!-- Gallery Grid with Real Photos -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <!-- Item 1: Office Ribbon Cutting -->
+                <div class="gallery-item group cursor-pointer" data-category="inauguration"
+                    onclick="openLightbox('assets/images/office-inauguration.jpg', 'Official Permanent Office Ribbon-Cutting & Signboard Opening (Reg: S-14245/2025)');">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white aspect-4/3">
+                        <img src="assets/images/office-inauguration.jpg" alt="Inauguration Ceremony"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-white text-xs font-bold flex items-center gap-1.5"><i
+                                    class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="mt-2.5">
+                        <span class="text-[10px] font-bold text-primary uppercase">Fulchari Headquarters</span>
+                        <h4 class="text-xs font-bold text-slate-900 line-clamp-1">Office Ribbon-Cutting Ceremony</h4>
+                    </div>
+                </div>
+
+                <!-- Item 2: Quran Literacy -->
+                <div class="gallery-item group cursor-pointer" data-category="education"
+                    onclick="openLightbox('assets/images/quran-distribution.jpg', 'Holy Quran Distribution to Young Quranic Students in Fulchari');">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white aspect-4/3">
+                        <img src="assets/images/quran-distribution.jpg" alt="Quran Distribution"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-white text-xs font-bold flex items-center gap-1.5"><i
+                                    class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="mt-2.5">
+                        <span class="text-[10px] font-bold text-emerald-600 uppercase">Education Drive</span>
+                        <h4 class="text-xs font-bold text-slate-900 line-clamp-1">Holy Quran Gift to Students</h4>
+                    </div>
+                </div>
+
+                <!-- Item 3: Community Dua -->
+                <div class="gallery-item group cursor-pointer" data-category="prayer"
+                    onclick="openLightbox('assets/images/ceremony-dua.jpg', 'Community Blessing & Dua Assembly with Village Elders');">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white aspect-4/3">
+                        <img src="assets/images/ceremony-dua.jpg" alt="Community Dua Assembly"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-white text-xs font-bold flex items-center gap-1.5"><i
+                                    class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="mt-2.5">
+                        <span class="text-[10px] font-bold text-amber-600 uppercase">Faith & Community</span>
+                        <h4 class="text-xs font-bold text-slate-900 line-clamp-1">Community Prayer & Blessing</h4>
+                    </div>
+                </div>
+
+                <!-- Item 4: Official Press Poster -->
+                <div class="gallery-item group cursor-pointer" data-category="inauguration"
+                    onclick="openLightbox('assets/images/inauguration-poster.jpg', 'Official Inauguration Poster of Ray Chowdhury Foundation');">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-sm border border-slate-200 bg-white aspect-4/3">
+                        <img src="assets/images/inauguration-poster.jpg" alt="Official Announcement Poster"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span class="text-white text-xs font-bold flex items-center gap-1.5"><i
+                                    class="fa-solid fa-magnifying-glass-plus"></i> View Full Photo</span>
+                        </div>
+                    </div>
+                    <div class="mt-2.5">
+                        <span class="text-[10px] font-bold text-purple-600 uppercase">Official Media</span>
+                        <h4 class="text-xs font-bold text-slate-900 line-clamp-1">Official Inauguration Release</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. Institutional FAQ Section -->
+    <section id="faq" class="py-16 sm:py-24 bg-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span data-i18n="faq_badge"
+                    class="text-primary font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">Governance
+                    & FAQ</span>
+                <h2 data-i18n="faq_title" class="text-2xl sm:text-4xl font-black text-slate-900 mt-2.5">Frequently Asked
+                    Questions</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="space-y-3.5">
+                <div class="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden">
+                    <button type="button"
+                        class="faq-question w-full p-4 sm:p-5 text-left flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:text-primary transition-colors">
+                        <span data-i18n="q1">1. Is Ray Chowdhury Foundation legally registered?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-slate-400 text-xs"></i>
+                    </button>
+                    <div data-i18n="a1"
+                        class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Yes. Ray Chowdhury Foundation is an officially registered non-profit organization under the
+                        Government of the People's Republic of Bangladesh with Registration Certificate # S-14245/2025.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden">
+                    <button type="button"
+                        class="faq-question w-full p-4 sm:p-5 text-left flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:text-primary transition-colors">
+                        <span data-i18n="q2">2. What payment methods are accepted internationally from Canada, USA, and
+                            Europe?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-slate-400 text-xs"></i>
+                    </button>
+                    <div data-i18n="a2"
+                        class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        We accept all major international Credit/Debit cards (Visa, Mastercard, American Express),
+                        Canadian Interac e-Transfer (auto-deposit: donations@raychowdhuryfoundation.org), digital
+                        express wallets (Apple Pay, Google Pay, PayPal), and direct international wire transfers
+                        (SWIFT/IBAN).
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden">
+                    <button type="button"
+                        class="faq-question w-full p-4 sm:p-5 text-left flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:text-primary transition-colors">
+                        <span data-i18n="q3">3. How do donors receive verification and proof for their
+                            contributions?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-slate-400 text-xs"></i>
+                    </button>
+                    <div data-i18n="a3"
+                        class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Every donor automatically receives a serialized electronic donation certificate and tax receipt,
+                        accompanied by photographic field documentation of the project execution.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl border border-slate-200 shadow-2xs overflow-hidden">
+                    <button type="button"
+                        class="faq-question w-full p-4 sm:p-5 text-left flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:text-primary transition-colors">
+                        <span data-i18n="q4">4. Are Zakat funds strictly segregated according to Islamic Shariah?</span>
+                        <i
+                            class="fa-solid fa-chevron-down faq-icon transition-transform duration-300 text-slate-400 text-xs"></i>
+                    </button>
+                    <div data-i18n="a4"
+                        class="faq-answer px-4 sm:px-5 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        Yes. Zakat funds are deposited into a dedicated account with zero administrative overhead and
+                        disbursed exclusively to vetted Shariah-eligible individuals.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 11. Global Liaison & Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-slate-50 relative border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span data-i18n="contact_badge"
+                    class="text-primary font-bold text-xs sm:text-sm tracking-wider uppercase bg-blue-50 px-3.5 py-1 rounded-full border border-blue-200">Global
+                    Liaison & Field Office</span>
+                <h2 data-i18n="contact_title" class="text-2xl sm:text-4xl font-black text-slate-900 mt-2.5">Get in Touch
+                    With Our Leadership</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+                <p data-i18n="contact_desc" class="text-slate-600 mt-3 text-xs sm:text-sm">For institutional
+                    partnerships, endowment inquiries, or field visit arrangements, reach out to our team.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                <!-- Contact Information Cards -->
+                <div class="lg:col-span-5 space-y-3.5">
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-blue-100 text-primary flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="c_address_title" class="font-bold text-slate-900 text-sm">Permanent
+                                Operational Headquarters</h4>
+                            <p data-i18n="c_address_val" class="text-xs text-slate-600 mt-1 leading-relaxed">Village:
+                                Udakhali, Post: Udakhali, P.S: Fulchari, Dist: Gaibandha, Bangladesh.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="c_phone_title" class="font-bold text-slate-900 text-sm">Global Hotline &
+                                WhatsApp Desk</h4>
+                            <p data-i18n="c_phone_val" class="text-xs text-slate-600 mt-1 font-mono">Direct Desk: +880
+                                1742-244243</p>
+                            <p data-i18n="c_hours" class="text-[11px] text-slate-500 mt-0.5">24/7 International Donor &
+                                Diaspora Liaison</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-2xs">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="c_email_title" class="font-bold text-slate-900 text-sm">Official
+                                Correspondence</h4>
+                            <p class="text-xs text-slate-600 mt-1 font-mono break-all">info@raychowdhuryfoundation.org
+                            </p>
+                            <p class="text-xs text-slate-600 font-mono break-all">donations@raychowdhuryfoundation.org
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/8801742244243" target="_blank"
+                        class="w-full py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center justify-center gap-2 shadow-2xs text-xs sm:text-sm transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Direct WhatsApp Inquiry Desk (+880 1742-244243)</span>
+                    </a>
+
+                </div>
+
+                <!-- Contact Inquiry Form -->
+                <div class="lg:col-span-7 bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-2xs">
+                    <h3 data-i18n="c_form_title" class="text-base sm:text-lg font-bold text-slate-900 mb-1">Send an
+                        Official Inquiry</h3>
+                    <p data-i18n="c_form_desc" class="text-xs text-slate-500 mb-5">Submit your message and our executive
+                        secretariat will respond within 24 business hours.</p>
+
+                    <form
+                        onsubmit="handleFormSubmit(event, 'Thank you! Your message has been sent to our secretariat.');"
+                        class="space-y-3.5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label data-i18n="f_name_lbl" class="block text-xs font-bold text-slate-600 mb-1">Donor
+                                    Full Name *</label>
+                                <input type="text" required placeholder="Full Name"
+                                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                            </div>
+                            <div>
+                                <label data-i18n="f_email_lbl" class="block text-xs font-bold text-slate-600 mb-1">Email
+                                    Address *</label>
+                                <input type="email" required placeholder="donor@example.com"
+                                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label data-i18n="c_form_subj" class="block text-xs font-bold text-slate-600 mb-1">Subject /
+                                Program Area</label>
+                            <input type="text" placeholder="Partnership, Zakat, or General Inquiry"
+                                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label data-i18n="c_form_msg" class="block text-xs font-bold text-slate-600 mb-1">Your
+                                Message *</label>
+                            <textarea rows="4" required placeholder="Write your inquiry here..."
+                                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm focus:border-primary focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full py-3.5 bg-primary hover:bg-primary-dark text-white font-bold rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-xs">
+                            <i class="fa-solid fa-paper-plane text-amber-300"></i>
+                            <span data-i18n="c_btn_send">Transmit Message</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 12. Corporate Footer -->
+    <footer class="bg-primary-navy text-slate-400 text-xs border-t border-slate-800 pt-12 pb-24 lg:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-10">
+
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <img src="assets/images/logo.jpg" alt="RCF Logo"
+                            class="w-9 h-9 rounded-lg object-contain bg-white p-0.5 border border-slate-700">
+                        <div>
+                            <span class="text-sm font-black text-white font-sans">RAY CHOWDHURY</span>
+                            <span class="text-xs text-emerald-400 block font-bold font-sans">FOUNDATION</span>
+                        </div>
+                    </div>
+                    <p data-i18n="footer_desc" class="text-slate-300 leading-relaxed text-xs">
+                        A globally recognized, transparent humanitarian initiative dedicated to lifting
+                        climate-vulnerable char communities through education, emergency relief, and sustainable social
+                        dignity.
+                    </p>
+                    <div class="inline-block px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-emerald-300 text-[11px] font-bold"
+                        data-i18n="footer_gov">
+                        Govt of Bangladesh Registered NGO (Certificate # S-14245/2025)
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 space-y-2.5">
+                    <h4 data-i18n="footer_links_title" class="font-bold text-white text-xs uppercase tracking-wider">
+                        Navigation</h4>
+                    <ul class="space-y-1.5 text-[11px]">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="#diaspora" class="hover:text-white transition-colors">Diaspora Hub</a></li>
+                        <li><a href="#donate" class="hover:text-white transition-colors">Give Online</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 space-y-2.5">
+                    <h4 data-i18n="footer_progs_title" class="font-bold text-white text-xs uppercase tracking-wider">
+                        Focus Areas</h4>
+                    <ul class="space-y-1.5 text-[11px]">
+                        <li><a href="#programs" class="hover:text-white transition-colors">Quran Literacy</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Flood & Erosion Relief</a>
+                        </li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Widow Micro-Grants</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">Deep Tube-Wells</a></li>
+                        <li><a href="#programs" class="hover:text-white transition-colors">100% Zakat Fund</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-3 space-y-2.5">
+                    <h4 data-i18n="footer_contact_title" class="font-bold text-white text-xs uppercase tracking-wider">
+                        Offices</h4>
+                    <div class="text-[11px] text-slate-300 space-y-1.5">
+                        <div><strong>Global Secretariat:</strong> Toronto, ON, Canada</div>
+                        <div><strong>Field Headquarters:</strong> Fulchari, Gaibandha, Bangladesh</div>
+                        <div><strong>Hotline:</strong> +880 1742-244243</div>
+                        <div class="break-all"><strong>Email:</strong> donations@raychowdhuryfoundation.org</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+                <p data-i18n="footer_copy">© 2026 Ray Chowdhury Foundation (RCF). All Rights Reserved.</p>
+                <p class="flex items-center gap-1 text-slate-400">
+                    Serving Humanity with <i class="fa-solid fa-heart text-rose-500"></i> Transparency & Dignity
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 13. Mobile Sticky Action Bar -->
+    <div
+        class="fixed bottom-0 inset-x-0 bg-white/98 backdrop-blur-md border-t border-slate-200 py-2 px-3 z-40 lg:hidden flex items-center justify-around gap-2 shadow-2xl">
+        <a href="tel:01742244243"
+            class="flex-1 py-2 px-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 transition-colors">
+            <i class="fa-solid fa-phone text-primary"></i>
+            <span data-i18n="bar_call">Call Helpline</span>
+        </a>
+        <a href="https://wa.me/8801742244243" target="_blank"
+            class="flex-1 py-2 px-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 transition-colors border border-emerald-200">
+            <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+            <span data-i18n="bar_whatsapp">WhatsApp</span>
+        </a>
+        <a href="#donate"
+            class="flex-1 py-2 px-2 bg-primary hover:bg-primary-dark text-white rounded-xl font-bold text-xs flex items-center justify-center gap-1.5 shadow transition-colors">
+            <i class="fa-solid fa-heart text-amber-300"></i>
+            <span data-i18n="bar_donate">Give (CAD/USD)</span>
+        </a>
+    </div>
+
+    <!-- 14. OFFICIAL DIGITAL DONATION RECEIPT & TAX CERTIFICATE MODAL -->
+    <div id="receiptModal"
+        class="fixed inset-0 bg-slate-950/80 z-50 hidden items-center justify-center p-3 sm:p-4 backdrop-blur-sm overflow-y-auto">
+        <div
+            class="relative max-w-xl w-full bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-6">
+
+            <!-- Receipt Header Bar -->
+            <div class="bg-primary-navy p-4 text-white flex items-center justify-between receipt-no-print">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Official Donation
+                        Certificate & Receipt</span>
+                </div>
+                <button type="button" onclick="closeReceiptModal();"
+                    class="text-white hover:text-rose-400 transition-colors text-base">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Printable Certificate Body -->
+            <div id="receiptContent" class="p-6 sm:p-8 space-y-6 bg-white">
+
+                <!-- Organization Branding -->
+                <div class="flex items-start justify-between border-b border-slate-200 pb-5">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/images/logo.jpg" alt="RCF Emblem"
+                            class="w-12 h-12 rounded-xl object-contain border border-slate-200 bg-white p-0.5">
+                        <div>
+                            <h3 class="font-black text-slate-900 text-base sm:text-lg">RAY CHOWDHURY FOUNDATION</h3>
+                            <p class="text-[10px] text-emerald-700 font-bold uppercase">Govt. Non-Profit Certificate:
+                                S-14245/2025</p>
+                            <p class="text-[10px] text-slate-500">Toronto Secretariat & Fulchari Field Headquarters</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[9px] uppercase tracking-wider text-slate-400 block font-bold">Serial
+                            Number</span>
+                        <span id="receiptSerialNo"
+                            class="font-mono text-xs font-black text-primary">RCF-INT-2026-928103</span>
+                        <span id="receiptDate" class="text-[10px] text-slate-500 block mt-0.5">November 22, 2026</span>
+                    </div>
+                </div>
+
+                <!-- Donor Acknowledgement -->
+                <div class="bg-slate-50 rounded-xl p-4 border border-slate-200 space-y-2 text-xs">
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Donor Name:</span>
+                        <strong id="receiptDonorName" class="text-slate-900 font-bold">Tariq Rahman</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Email Address:</span>
+                        <span id="receiptDonorEmail" class="font-mono text-slate-700">tariq@example.com</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Designated Program:</span>
+                        <span id="receiptCause" class="font-bold text-primary">Education & Quran</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-500">Payment Gateway:</span>
+                        <span id="receiptMethod" class="text-emerald-700 font-medium">International Credit Card</span>
+                    </div>
+                </div>
+                <!-- Total Amount Pill -->
+                <div
+                    class="p-4 rounded-xl bg-gradient-to-r from-emerald-500/10 via-primary/5 to-emerald-500/10 border border-emerald-300 text-center">
+                    <span class="text-[10px] text-slate-500 uppercase font-bold tracking-wider block">Total Amount
+                        Acknowledged</span>
+                    <span id="receiptAmount" class="text-2xl sm:text-3xl font-black text-primary-navy font-sans">CA$
+                        150.00 CAD</span>
+                    <span class="text-[10px] text-emerald-800 font-bold block mt-0.5">Status: Authorized &
+                        Confirmed</span>
+                </div>
+
+                <!-- Legal Certification Statement & Seal -->
+                <div
+                    class="flex items-center justify-between pt-2 border-t border-slate-100 text-[10px] text-slate-500 leading-relaxed">
+                    <div class="max-w-xs">
+                        This document serves as an official non-profit donation acknowledgement under Charter
+                        S-14245/2025. 100% of these funds are directly assigned to field operations.
+                    </div>
+                    <div class="text-center shrink-0">
+                        <div
+                            class="w-14 h-14 rounded-full border-2 border-dashed border-amber-500/60 flex items-center justify-center p-1 text-[8px] font-black uppercase text-amber-700 leading-tight text-center">
+                            Official<br>Seal
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Receipt Actions (Buttons not printed) -->
+            <div
+                class="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-3 receipt-no-print">
+                <button type="button" onclick="closeReceiptModal();"
+                    class="px-4 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold transition-colors">
+                    Close
+                </button>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="window.print();"
+                        class="px-4 py-2 rounded-xl bg-primary hover:bg-primary-dark text-white text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print / Save PDF</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 15. Lightbox Modal -->
+    <div id="lightboxModal"
+        class="fixed inset-0 bg-slate-950/90 z-50 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div
+            class="relative max-w-4xl w-full bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+            <button id="closeLightbox"
+                class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center transition-all">
+                <i class="fa-solid fa-xmark text-base"></i>
+            </button>
+            <div class="p-2 sm:p-4 max-h-[80vh] flex items-center justify-center bg-black/50">
+                <img id="lightboxImg" src="" alt="Gallery Image"
+                    class="max-h-[72vh] max-w-full object-contain rounded-lg">
+            </div>
+            <div class="p-3.5 bg-slate-900 border-t border-slate-800">
+                <p id="lightboxCaption" class="text-white text-xs sm:text-sm font-medium text-center"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 16. Islamic Zakat Calculator Modal -->
+    <div id="zakatModal"
+        class="fixed inset-0 bg-slate-950/80 z-50 hidden items-center justify-center p-4 backdrop-blur-sm overflow-y-auto">
+        <div
+            class="relative max-w-lg w-full bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-8">
+            <div class="bg-gradient-to-r from-amber-600 to-amber-700 p-4 text-white flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-scale-balanced text-lg text-amber-200"></i>
+                    <h3 class="font-bold text-sm sm:text-base">Islamic Zakat & Sadaqah Calculator</h3>
+                </div>
+                <button id="closeZakatBtn"
+                    class="w-7 h-7 rounded-lg bg-black/20 hover:bg-black/40 text-white flex items-center justify-center text-sm transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="p-5 sm:p-6 space-y-4">
+                <p class="text-xs text-slate-600 leading-relaxed">
+                    Calculate your 2.5% annual Zakat liability according to Islamic Shariah on surplus wealth held over
+                    one lunar year:
+                </p>
+
+                <div class="space-y-3 text-xs">
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Cash in Bank & Hand (CAD / Local
+                            Currency)</label>
+                        <input type="number" id="zCash" value="10000" oninput="calculateZakat()"
+                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold focus:border-amber-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Gold, Silver & Liquid Jewelry Value</label>
+                        <input type="number" id="zGold" value="5000" oninput="calculateZakat()"
+                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold focus:border-amber-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Shares, Business Stock & Mutual Funds</label>
+                        <input type="number" id="zInvest" value="0" oninput="calculateZakat()"
+                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold focus:border-amber-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-slate-700 mb-1">Less: Immediate Short-Term Debts Due</label>
+                        <input type="number" id="zDebts" value="0" oninput="calculateZakat()"
+                            class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold focus:border-amber-500 focus:outline-none">
+                    </div>
+                </div>
+                <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 space-y-2">
+                    <div class="flex justify-between items-center text-xs">
+                        <span class="text-slate-600">Net Zakatable Wealth:</span>
+                        <strong id="netWealthDisplay" class="text-slate-900 font-bold font-sans">CA$ 15,000.00</strong>
+                    </div>
+                    <div class="flex justify-between items-center text-sm sm:text-base pt-2 border-t border-amber-200">
+                        <span class="font-bold text-amber-950">Zakat Due (2.5%):</span>
+                        <strong id="zakatDueDisplay" class="text-emerald-700 font-black font-sans text-xl">CA$
+                            375.00</strong>
+                    </div>
+                </div>
+
+                <button type="button" onclick="applyZakatToDonation()"
+                    class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all">
+                    <i class="fa-solid fa-hand-holding-dollar text-amber-300"></i>
+                    <span>Apply This Zakat to Donation Form</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
